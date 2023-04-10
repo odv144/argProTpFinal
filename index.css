@@ -1,0 +1,40 @@
+.carousel-image{
+    max-height: 95vh;
+    min-height: 300px;       
+}
+
+.text-cards{
+    width: 250px;
+}
+
+.agenda{
+    width: 250px;
+}
+
+.servicios{
+    background: no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.servicio-liquido{
+    background-image: url("./assets/LiquidDamage.jpg");
+}
+
+
+.servicio-custom{
+    background-image: url("./assets/Custom-PC.jpg");
+}
+
+.servicio-data{
+    background-image: url("./assets/Data-Recovery.jpg");
+}
+
+.servicio-soporte{
+    background-image: url("./assets/IT-Support.jpg");
+}
+
+
