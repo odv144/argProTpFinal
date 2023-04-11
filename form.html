@@ -5,178 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- <link href="http://www.bootstrapwizard.com/demo/bootstrap-wizard.css" rel="stylesheet"> -->
-
-    <link rel="stylesheet" href="form.css" type="text/css">
-
-
 </head>
 
 <body>
-
     <div class="container">
-        <h3>Diagnositico Basico</h3>
-        <div id="plain" class="example">
-            <div class="wizard">
-                <ul class="nav nav-wizard">
-                    <li>
-                        <a href="#step1">Sin Video</a>
+        <header>DATOS PARA SOLUCION DE FALLA</header>
+        <div class="progress-bar">
+            <div class="paso">
+                <p>Datos</p>
+                <div class="num">
+                    <span>1</span>
+                </div>
+                <i class="check las la-check"></i>
+            </div>
+            <div class="paso">
+                <p>Equipo</p>
+                <div class="num">
+                    <span>2</span>
+                </div>
+                <i id="check1" class="check las la-check"></i>
+            </div>
+            <div class="paso">
+                <p>Falla</p>
+                <div class="num">
+                    <span>3</span>
+                </div>
+                <i class="check las la-check"></i>
+            </div>
+            <div class="paso">
+                <p>Envio</p>
+                <div class="num">
+                    <span>4</span>
+                </div>
+                <i class="check las la-check"></i>
+            </div>
+        </div>
+        <div class="form-princ">
+            <form action="#">
+                <!-- Pagina 1 -->
+                <div class="pagina movPag">
+                    <div class="titulo">Datos del Usuario:</div>
+                    <div class="campo">
+                        <div class="label">Apellido y Nombre <b class="error" id="nombre-error"></b></div>
+                        <input type="text" id="nombre" placeholder="nombre">
+                    </div>
 
-                        <!-- <ul class="nav nav-wizard">
-                            <li> Apagar equipo</li>
-                            <li>
-                                <p>Busque el cable de video del monitor (vga - posiblemente ficha azul con tornillo)</p>
-                            </li>
+                    <div class="campo">
+                        <div class="label">Email <b class="error" id="email-error"></b></div>
+                        <input type="text" id="correo" placeholder="correo">
+                    </div>
 
-                        </ul> -->
-                    </li>
-                    <li>
-                        <a href="#step2">Notebook no enciende</a>
-
-                    </li>
-                    <li>
-                        <a href="#step3">Pantalla de notebook</a>
-
-                        <ul class="nav nav-wizard">
-                            <li>
-                                <a href="#step3a">Todo Negro</a>
-                            </li>
-                            <li>
-                                <a href="#step3b">Manchas</a>
-                            </li>
-                            <li>
-                                <a href="#step3c">Distorciones</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#step4">Sistema Operativo</a>
-                        <ul class="nav nav-wizard">
-                            <li>
-                                <a href="#step4a">Inicia y solo se ve el puntero del mouse</a>
-                            </li>
-                            <li>
-                                <a href="#step4b">Sin sistema operativo</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#step5">Problema Personalizado</a>
-                    </li>
-                </ul>
-
-                <div class="wizard-pane" id="step1">
-                    <h3>Cpu enciende pero no da Video</h3>
-                    <ul>
-                        <li>Al encender el equipo escucha un beep, el led del teclado enciende, cpu ok, posible falla
-                            del monitor o cable </li>
-                        <li>Apague el equipo y desconecte de la alimentación tanto el cpu como el monitor</li>
-                        <li>Desconecte el cable de video (vga ficha azul) del monitor</li>
-                        <li>Conecta alimentación del monitor y encienda</li>
-                        <li>En el monitor deberia ver una lenyenda indicando falta de señal de video (El monitor esta
-                            correcto)</li>
-                        <li>Se debe realizar un diagnostico más en profundidad</li>
-                    </ul>
-
-
+                    <div class="campo sigPag">
+                        <button>Siguiente</button>
+                    </div>
                 </div>
 
-                <div class="wizard-pane" id="step2">
-                    <h3>Controlar alimentación</h3>
-                    <p>
-                        Si al equipo le llega alimentación, (prende led testito), y el monitor tambien esta
-                        alimendado, realice los pasos siguientes.
-                    </p>
+                <!-- Pagina 2 -->
+                <div class="pagina">
+                    <div class="titulo">Equipo con problema</div>
+                    <div class="campo">
+                        <div class="label">Notebook <b class="error" id="notebook-error"></b>
+                            <input type="radio" name="equipo" id="notebook" placeholder="Notebook">
+                        </div>
+                    </div>
 
-                </div>
-                <div class="wizard-pane" id="step3">
-                    <h3>Las Pantallas de Notebook pueden presentar multiples fallas</h3>
-                    <p>Algunas consideraciones para tratar de diagnosticar se detallan en los siguientes pasos, pero
-                        depende mucho del tipo de pantalla, LCD, LED</p>
-                </div>
+                    <div class="campo">
+                        <div class="label">Impresora <b class="error" id="impresora-error"></b>
+                            <input type="radio" name="equipo" id="impresora" placeholder="Impresora">
+                        </div>
+                    </div>
 
-                <div class="wizard-pane" id="step3a">
-                    <h3>Pantalla toda Negra</h3>
-                    <p>Esta situación puede estar causada por multitudinarias, fallas, enumeramos algunas y posibles
-                        soluciones</p>
-                    <ul>
-                        <li>El equipo no bootea: Falla en ram, Chip Grafico, Corrupción de bios, etc</li>
-                        <li>El equipo bootea: Podria fallar la pantalla o flex, se puede intentar conectar un monitor
-                            externo por vga, hdmi, para asegurar que el equipo funciona</li>
-                        <li>Perdida de brillo: El equipo funciona y sometiendo la pantalla a una luz intensa se puede
-                            observar el funcionamiento de la maquina</li>
-                        <li>Segun posicion de la pantalla esta queda en negro: Falla de flex</li>
-                    </ul>
+                    <div class="campo btns">
+                        <button class="volver-pag1 volver">Atrás</button>
+                        <button class="adelantar-pag3 adelante">Siguiente</button>
+                    </div>
                 </div>
+                <!-- Pagina 3 -->
+                <div class="pagina">
+                    <div class="titulo">Falla detectada</div>
+                    <fieldset class="radio" id="falla-notebook">
 
-                <div class="wizard-pane" id="step3b">
-                    <h3>Pantalla toda Blanca</h3>
-                    <p>Es una falla menos frecuente, suele presentarse cuando se daña el circuito de la main de la
-                        pantalla, soloción cambio de la misma o intentar repara pero a nivel electronico</p>
-                </div>
-
-                <div class="wizard-pane" id="step3c">
-                    <h3>Pantalla con distorciones</h3>
-                    <p>Esta debeser una de las fallas mas habituales, luego de pantallas rotas por golpes, en un 80% se
-                        debe a que el flex esta fallando, o a punto de cortarse, el otro 20% suele ser el chip de video
-                    </p>
-                </div>
-
-                <div class="wizard-pane" id="step4">
-                    <h3>Sistema Operativo (S.O.)</h3>
-                    <p>El Sistema Operativo es lo que permite que una persona pueda usar, la computadora. Existen muchos
-                        sistemas operativos, los más conocidos son Windows, Linux, MAC. Independientemente del
-                        S.O.(sistema operativo), el mismo siempre debera ser cargado desde una unidad de almacenamiento.
-                        Siendo este almacenamiento causa frecuente de falla del mismo.</p>
-                </div>
-
-                <div class="wizard-pane" id="step4a">
-                    <h3>No Termina de Cargar</h3>
-                    <p>
-                        En ocaciones, Windows puede cargarse de forma erratica, es decir luego del logo de windows
-                        podria quedar la pantalla toda negra o en la imagen de fondo definida y solo ver el puntero del
-                        mouse. Esto pude suceder por multiples razones. Lo habitual es precionar las teclas Ctrl + Shift
-                        + Esc para abrir una ventana de Administración de Tareas, para luego ejecutar una nueva tarea,
-                        con el Explorador de Windows y luego reiniciar el equipo.
-                    </p>
-                </div>
-
-                <div class="wizard-pane" id="step4b">
-                    <h3>Sistema Operativo no Encontrado</h3>
-                    <p>
-                        Si ve el «Operating System not found” Mensaje de error de arranque en su computadora, significa
-                        que no se ha encontrado ningún cargador de arranque del sistema operativo en el disco actual.
-                        Por lo tanto, su computadora no puede encontrar e iniciar el cargador de arranque de Windows (o
-                        el cargador de arranque de cualquier otro sistema operativo instalado en su computadora).
-                        Algunas razones pueden ser que el disco esta dañado, que la estructura lógica del disco esta
-                        corrupta, o incluso una mala configuración del disco en el setup.
-                    </p>
-                </div>
-
-                <div class="wizard-pane" id="step5">
-                    <fieldset>
-                        <legend>Detalle su problema</legend>
+                        <div class="campo">
+                            <div class="label">No enciende
+                                <input type="radio" name="falla" id="noenciende" />
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div class="label">Enciende Sin Imagen
+                                <input type="radio" name="falla" id="enciende" />
+                            </div>
+                        </div>
                     </fieldset>
-                    <textarea name="problema" id="problem" cols="50" rows="10"></textarea>
+                    <fieldset class="radio" id="falla-impre">
+
+                        <div class="campo">
+                            <div class="label">Imprime Rayado
+                                <input type="radio" name="falla" id="imprime" />
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <div class="label">No Imprime
+                                <input type="radio" name="falla" id="noImprime" />
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="campo btns">
+                        <button class="volver-pag2 volver">Atrás</button>
+                        <button class="adelantar-pag4 adelante">Siguiente</button>
+                    </div>
+
+                </div>
+                <!-- Pagina 4 -->
+                <div class="pagina">
+                    <div class="titulo">Informacion Recopilada</div>
+                    <div class="campo">
+                        <div class="label">Verifique los datos</div>
+                        <span id="resultado"></span>
+                    </div>
+
+                    <div class="campo btns">
+                        <button class="volver-pag3 volver">Atrás</button>
+                        <button class="Fin">Finalizar</button>
+                    </div>
+
                 </div>
 
-            </div> <!-- wizard -->
-        </div><!-- example -->
-
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="http://www.bootstrapwizard.com/demo/bootstrap-wizard.min.js"></script>
-    <script src="assets/script.js"></script>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/movimiento.js"></script>
 </body>
 
 </html>
