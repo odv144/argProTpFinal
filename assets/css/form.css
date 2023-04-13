@@ -48,6 +48,7 @@ body{
     width:25%;
     transition: margin-left 0.3s ease-in-out;
     
+    
 
 }
 
@@ -99,8 +100,9 @@ body{
 }
 
 .form-princ form .pagina .campo button{
+   
     width:100%;
-    height: calc(100%+2px); /*para mantener estetica al cambiar de tamaño*/
+    /* height: calc(100%+2px); para mantener estetica al cambiar de tamaño */
     margin-top:-20px;
     border:none;
     background:#0e2c48;

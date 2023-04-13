@@ -46,31 +46,35 @@
             </div>
         </div>
         <div class="form-princ">
-            <form action="#">
+
+            <form action="#" name="registrarDatos" id="registrarDatos">
                 <!-- Pagina 1 -->
                 <div class="pagina movPag">
                     <div class="titulo">Datos del Usuario:</div>
                     <div class="campo">
-                        <div class="label">Apellido y Nombre <b class="error" id="nombre-error"></b></div>
-                        <input type="text" id="nombre" placeholder="nombre">
+                        <div class="label"> Apellido y Nombre <b class="error" id="nombre-error"></b></div>
+                        <input type="text" id="nombre" placeholder="nombre" />
                     </div>
 
                     <div class="campo">
-                        <div class="label">Email <b class="error" id="email-error"></b></div>
-                        <input type="text" id="correo" placeholder="correo">
+                        <div class="label">Email <b class="error" id="correo-error"></b> </div>
+                        <input type="text" name="correo" id="correo" placeholder="correo" />
                     </div>
 
-                    <div class="campo sigPag">
+                    <div class="campo btns sigPag">
                         <button>Siguiente</button>
                     </div>
+                    
+
                 </div>
 
                 <!-- Pagina 2 -->
                 <div class="pagina">
+
                     <div class="titulo">Equipo con problema</div>
                     <div class="campo">
                         <div class="label">Notebook <b class="error" id="notebook-error"></b>
-                            <input type="radio" name="equipo" id="notebook" placeholder="Notebook">
+                            <input type="radio" name="equipo" id="notebook" placeholder="Notebook" checked="true">
                         </div>
                     </div>
 
@@ -105,7 +109,7 @@
 
                         <div class="campo">
                             <div class="label">Imprime Rayado
-                                <input type="radio" name="falla" id="imprime" />
+                                <input type="radio" name="falla" id="imprime"  checked="true"/>
                             </div>
                         </div>
                         <div class="campo">
@@ -132,7 +136,9 @@
 
                     <div class="campo btns">
                         <button class="volver-pag3 volver">Atrás</button>
-                        <button class="Fin">Finalizar</button>
+                        <button class="Fin">Enviar</button>
+                        <button type ="reset"class="limpiar">Borrar</button> 
+
                     </div>
 
                 </div>
@@ -141,6 +147,8 @@
         </div>
     </div>
     <script src="assets/js/movimiento.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
 </body>
 
 </html>
