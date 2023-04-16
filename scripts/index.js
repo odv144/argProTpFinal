@@ -1,6 +1,6 @@
-import Card from "./Components/Card.js"
-import Footer from "./Components/Footer.js";
-import NavBar from "./Components/NavBar.js";
+import Card from "../Components/Card.js"
+import Footer from "../Components/Footer.js";
+import NavBar from "../Components/NavBar.js";
 
 let teammates;
 
