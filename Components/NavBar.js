@@ -3,9 +3,7 @@ const NavBar = () => {
     `<nav class="navbar navbar-expand-lg bg-dark">
     <div class=" navbar bg-dark container mx-2 mx-sm-auto" data-bs-theme="dark">
         <a class="navbar-brand" href="#">
-            <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">LogoCorporativo</font>
-            </font>
+            <img src="./assets/logo.png" alt="" style="width: 250px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
