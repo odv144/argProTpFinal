@@ -7,9 +7,6 @@
 
 }
 body{
-    display:flex;
-    align-items: center;
-    justify-content: center;
     min-height:100vh;
     background: url(https://i.postimg.cc/Kvtzg3bK/Electricidad-y-Electronica-Perito-Industrial-1024x576.jpg);
     background-position: center;
@@ -17,14 +14,14 @@ body{
     background-repeat: no-repeat;
 
 }
-.container{
-    width:350px;
+.container-omar{
+    max-width:450px;
     background-color: #fff;
     border-radius:7px;
     text-align:center;
     padding: 30px 35px 0 35px;
 }
-.container header{
+.container-omar header{
     font-size: 28px;
     font-weight:600px;
     margin:0 0 30px 0;
@@ -33,7 +30,7 @@ body{
     border-radius: 25px;
 
 }
-.container .form-princ{
+.container-omar .form-princ{
     width: 100%;
     overflow:hidden; 
 
@@ -61,7 +58,7 @@ body{
 
 .form-princ form .pagina .campo{
     /* height:35px; */
-    width:350px;
+    max-width:350px;
     margin:40px 0;
     display:flex;
     position:relative;
@@ -134,12 +131,12 @@ form .pagina .btns button.adelante{
     font-size: 17px;
 }
 
-.container .progress-bar{
+.container-omar .progress-bar{
     display: flex;
     margin:40px 0px;
 
 }
-.container .progress-bar .paso{
+.container-omar .progress-bar .paso{
     text-align: center;
     width: 100%;
     position:relative;
@@ -259,3 +256,29 @@ o .num span{
 fieldset{
     border:none;
 }
+
+
+
+@media only screen and (max-width: 375px) {
+    .progress-bar .paso .num::after,
+.progress-bar .paso .num:before{  /*para dibujar la linea*/
+    position:absolute;
+    content:"";
+    width:30px;
+    height:3px;
+    bottom: 11px;
+    right: -34px;
+    background:black;
+
+}
+
+.progress-bar .paso:last-child .num::after, /*ocultar el ultimo elemento*/
+.progress-bar .paso:last-child .num:before{
+    display:none;
+
+}
+
+}
+
+
+
