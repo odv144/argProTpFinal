@@ -1,0 +1,31 @@
+.root-team{
+    justify-content: space-between;
+    padding: 60px 0;
+    
+}
+.student-card{
+    width: 295px;
+    background-color: rgba(20, 108, 148, 0.7) !important;
+    border: 1px rgba(20, 108, 148, 1) solid  ;
+    margin: 10px;
+
+}
+
+.mid-container{
+    padding: 3px 0 3px;
+    height: 125px;
+}
+
+.bio{
+    height: 225px;
+}
+
+.bio::before {
+    content: " ";
+    display: block;
+    border-bottom: 1px rgba(20, 108, 148, 1) solid;
+}
+
+.bi{
+    color: black;
+}

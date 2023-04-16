@@ -1,11 +1,13 @@
-import Card from "./Components/Card.js"
-import Footer from "./Components/Footer.js";
-import NavBar from "./Components/NavBar.js";
+import Card from "../Components/Card.js"
+import Footer from "../Components/Footer.js";
+import NavBar from "../Components/NavBar.js";
 
 let teammates;
 
 const apiUrl = "https://ap-backend-production-6742.up.railway.app"
 
+
+/* pedido fetch a la API REST */
 await fetch(`${apiUrl}/usuarios`)
   .then(response => response.json())
   .then(data => teammates = data.teammates)
@@ -23,4 +25,3 @@ ${teammates.map((alumno)=>{
 $(".navbar-container").html(NavBar())
 $(".root-team").html(app)
 $(".footer-container").html(Footer())
-

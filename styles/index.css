@@ -1,5 +1,5 @@
 .carousel-image{
-    max-height: 95vh;
+    max-height: 91vh;
     min-height: 300px;       
 }
 
@@ -22,26 +22,29 @@
 }
 
 .servicio-liquido{
-    background-image: url("./assets/LiquidDamage.jpg");
+    background-image: url("../assets/index-images/LiquidDamage.jpg");
     
 }
 
 
 .servicio-custom{
-    background-color: black;
-    background-image: url("./assets/Custom-PC.jpg");
+    background-image: url("../assets/index-images/Custom-PC.jpg");
 
     
 }
 
 .servicio-data{
-    background-image: url("./assets/Data-Recovery.jpg");
+    background-image: url("../assets/index-images/Data-Recovery.jpg");
 
 }
 
 .servicio-soporte{
-    background-image: url("./assets/IT-Support.jpg");
+    background-image: url("../assets/index-images/IT-Support.jpg");
 
+}
+
+.servicio-cotizar{
+    background-image: url("../assets/index-images/cotizar.jpg");
 }
 
 

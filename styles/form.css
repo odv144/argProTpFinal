@@ -25,7 +25,7 @@ body{
     font-size: 28px;
     font-weight:600px;
     margin:0 0 30px 0;
-    background-color:#0e2c48;
+    background-color:#146C94;
     color:#fff;
     border-radius: 25px;
 
@@ -102,7 +102,7 @@ body{
     /* height: calc(100%+2px); para mantener estetica al cambiar de tamaño */
     margin-top:-20px;
     border:none;
-    background:#0e2c48;
+    background:#146C94;
     border-radius:7px;
     color:#fff;
     font-size: 18px;
