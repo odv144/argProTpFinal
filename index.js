@@ -1,4 +1,6 @@
 import Card from "./Components/Card.js"
+import Footer from "./Components/Footer.js";
+import NavBar from "./Components/NavBar.js";
 
 let teammates;
 
@@ -18,6 +20,7 @@ ${teammates.map((alumno)=>{
 </div>`
 
 
+$(".navbar-container").html(NavBar())
 $(".root-team").html(app)
-
+$(".footer-container").html(Footer())
 

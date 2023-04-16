@@ -1,35 +1,36 @@
-const Card = (alumno) => {
+const Footer = () => {
   return (
-    `<div class="card rounded-3 border border-secondary shadow-lg m-5 student-card" style="width: 300px;  min-width: 300px;" >
-    <div class=" d-flex">
-        <img src=${alumno.image} style="width: 100%;" class="rounded-top" alt="" srcset="">
+    `<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="C:\Users\admin\Downloads\desarrollo web\proyecto html" alt="Logo">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Sobre ElectronicPc</h2>
+            <p>Nos preocupamos por garantizar un servicio de calidad a nuestros clientes. Por este motivo somos una
+                empresa</p>
+            <p>certificada con normas ISO 9001:2015 en cada uno de los procesos que desarrollamos.</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
     </div>
-    <div class="p-4">
-        <h5 class="text-center">${alumno.name}</h5>
-        ${alumno.linkedin? `<div>
-        <i class="bi bi-linkedin"></i>
-        <a href=${alumno.linkedin} target="_blank" class="ms-1 text-dark">Linkedin</a>
-    </div>`: ""}
-
-        ${alumno.portfolio? `<div>
-        <i class="bi bi-briefcase-fill"></i>
-        <a href=${alumno.portfolio} target="_blank" class="ms-1 text-dark">Portfolio</a>
-    </div>`: ""}
-
-        ${alumno.github? `<div>
-        <i class="bi bi-github"></i>
-        <a href=${alumno.github} target="_blank" class="ms-1 text-dark ">Github</a>
-    </div>`:""}
-        
-      
-  
-
-        <p class="m-0"> ${alumno.bio}</p>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Logi Arg</b> - Todos los Derechos Reservados.</small>
     </div>
-
-</div>`
+</footer>`
     
   )
 }
 
-export default Card
+export default Footer
