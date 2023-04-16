@@ -64,12 +64,10 @@ body{
     content: '';
     width: 100%;
     height: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
-
-    background: #9b9999;
+    
     opacity: 0.9;
 }
 
@@ -82,9 +80,10 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-image: url('../fondo.jpg');
+    background-image: url("../assets/contact/parts.jpeg");
     background-size: cover;
     background-position: center center;
+    box-shadow: inset 0 0 0 1000px rgba(20, 108, 148, 0.7);
 
 }
 
@@ -178,10 +177,10 @@ form.form_contact textarea{
 
 form.form_contact input[type="button"]{
     width: 180px;
-	background: #9b9999;
+	background: #146c94;
 	padding: 10px;
 	border: none;
-	border-radius: 25px;
+	border-radius: 8px;
 
     align-self: flex-end;
 
