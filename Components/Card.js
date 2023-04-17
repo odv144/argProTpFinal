@@ -31,8 +31,6 @@ const Card = (alumno) => {
     </div>
         
       
-  
-
         
     </div>
 

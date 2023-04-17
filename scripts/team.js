@@ -10,12 +10,10 @@ const apiUrl = "https://ap-backend-production-6742.up.railway.app"
 /* pedido fetch a la API REST */
 await fetch(`${apiUrl}/usuarios`)
   .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    teammates = data.teammates})
+  .then(data => teammates = data.teammates)
   
 
-const app = `<div class="container d-flex  justify-content-center flex-wrap">
+const app = `<div class="container d-flex  justify-content-around flex-wrap">
 ${teammates.map((alumno)=>{
     return(
         Card(alumno)
