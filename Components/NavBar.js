@@ -3,10 +3,10 @@ const NavBar = () => {
     `<nav class="navbar navbar-expand-lg shadow" style="background-color: #000000 !important;">
     <div class=" navbar container mx-2 mx-sm-auto" data-bs-theme="dark">
         <a class="navbar-brand d-none d-sm-block" href="./index.html">
-            <img src="../assets/logo.png" alt="" style="width: 250px;">
+            <img src="assets/logo.png" alt="" style="width: 250px;">
         </a>
         <a class="navbar-brand d-block d-sm-none" href="./index.html">
-            <img src="../assets/small-logo.png" alt="" style="width: 50px;">
+            <img src="assets/small-logo.png" alt="" style="width: 50px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
