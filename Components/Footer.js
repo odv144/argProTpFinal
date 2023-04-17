@@ -4,7 +4,7 @@ const Footer = () => {
     <div class="grupo-1">
         <div class="box">
             <figure>
-                <a href="/">
+                <a href="./">
                     <img src="assets/logo.png" alt="Logo">
                 </a>
             </figure>
