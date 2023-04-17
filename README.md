@@ -6,7 +6,7 @@
 # Alumnos:
 * Omar Virilli
 * Gastón Alemán
-* Cristian Argañarás
+* Cristian Argañaráz
 * Diego Guzmán
 
 # Descripcion de lo realizado ✌

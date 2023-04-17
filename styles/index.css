@@ -3,6 +3,10 @@
     min-height: 300px;       
 }
 
+.boton-header{
+    font-family: 'Roboto', sans-serif; width: 250px;
+}
+
 .text-cards{
     width: 250px;
 }
