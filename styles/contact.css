@@ -18,12 +18,29 @@ body {
 }
 
 body{
-    background: #494646;
+    background: #000000;
     font-family: 'Roboto', sans-serif;
     }
-/* MEDIA QUERY*/
+/*logo*/
 
-@media (max-width: 600px) {
+.logo{
+    height: 150px;
+    width: 400px; 
+    
+}
+
+    /* MEDIA QUERY*/
+
+@media (max-width: 1000px) and (min-width:600px) {  
+    .logo{
+        height: 150px;
+        width: 300px; 
+        
+    }
+  }
+    
+
+@media (max-width: 767px) {
      .form_wrap {
     flex-direction: column;
     height: 1060px !important;
@@ -47,7 +64,6 @@ body{
 
 .form_wrap{
     width: 100%;
-    max-width: 900px;
     height: 530px;
     margin: 50px auto;
     display: flex;
@@ -64,15 +80,17 @@ body{
     content: '';
     width: 100%;
     height: 100%;
+
     position: absolute;
     top: 0;
     left: 0;
-    
+
+    background: #19A7CE;
     opacity: 0.9;
 }
 
 .cantact_info{
-    width: 38%;
+    width: 50%;
     position: relative;
 
     display: flex;
@@ -80,10 +98,9 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-image: url("../assets/contact/parts.jpeg");
+    background-image: url('https://i.postimg.cc/MpSbwQCN/fondo.jpg');
     background-size: cover;
     background-position: center center;
-    box-shadow: inset 0 0 0 1000px rgba(20, 108, 148, 0.7);
 
 }
 
@@ -91,7 +108,7 @@ body{
 .info_items{
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: #F6F1F1;
 }
 
 .info_title{
@@ -150,9 +167,6 @@ form.form_contact .user_info{
     flex-direction: column;
 }
 
-form.form_contact label{
-    font-weight: 600;
-}
 
 form.form_contact input,
 form.form_contact textarea{
@@ -177,10 +191,10 @@ form.form_contact textarea{
 
 form.form_contact input[type="button"]{
     width: 180px;
-	background: #146c94;
+	background: #146C94;
 	padding: 10px;
 	border: none;
-	border-radius: 8px;
+	border-radius: 25px;
 
     align-self: flex-end;
 
@@ -212,7 +226,7 @@ form.form_contact input[type="button"]:hover{
 }
 
 .mensaje_modal{
-    background: #fff;
+    background: #ffff;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     width: 400px;
     padding: 30px 20px 15px;
@@ -220,8 +234,7 @@ form.form_contact input[type="button"]:hover{
 
 .mensaje_modal h3{
     text-align: center;
-    font-family: 'Ubuntu';
-	font-size: 20px;
+    font-size: 20px;
 	font-weight: 400;
 }
 
@@ -240,10 +253,9 @@ form.form_contact input[type="button"]:hover{
 }
 
 .mensaje_modal p:before{
-    content: "\f00d";
-    font-family: FontAwesome;
+    content: "!";
     display: inline-block;
-    color: #E25151;
+    color: #f7130c;
     margin-right: 8px;
 }
 
@@ -252,8 +264,11 @@ form.form_contact input[type="button"]:hover{
 	padding: 3px 10px;
 	margin-top: 10px;
 
-	background: #E25151;
+	background: #146C94;
 	color: #fff;
-	border: 2px solid #B14141;
+	border: 2px solid #146C94;
 	cursor: pointer;
-} 
+    border-radius: 45px;
+
+	
+ }
