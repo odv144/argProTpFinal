@@ -1,4 +1,4 @@
-## Web app para Argentina Programa U.T.N. clase 12 grupo 3 
+## Web para Argentina Programa U.T.N. clase 12 grupo 3 
 
 
 [Electronic PC](https://odv144.github.io/argProTpFinal/index.html)
