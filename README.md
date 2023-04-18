@@ -4,7 +4,7 @@
 [Electronic PC](https://odv144.github.io/argProTpFinal/index.html)
 
 # Alumnos:
-* Omar Virilli
+* Omar Virili
 * Gastón Alemán
 * Cristian Argañaráz
 * Diego Guzmán
