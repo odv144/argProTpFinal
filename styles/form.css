@@ -246,7 +246,9 @@ o .num span{
 .error{
     color:red;
     float:right;
-    text-align:right;
+
+    text-align:left;
+    font-size: 0.7rem;
 }
 .pagina .campo span{
     
